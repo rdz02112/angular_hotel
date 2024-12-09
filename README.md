@@ -22,6 +22,8 @@ run backend for MY SQL Workbench
 
 step 1 :
 
+OPEN FILE sakila_full_mwb  ## This MY SQL ##
+
 cd nodemysql
 
 step 2 :
