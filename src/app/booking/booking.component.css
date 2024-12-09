@@ -1,0 +1,103 @@
+.book-room-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn {
+    background-color: #28a745;
+  }
+  
+  .add-btn:hover {
+    background-color: #218838;
+  }
+  
+  .navigate-btn {
+    background-color: #007bff;
+    margin-top: 10px;
+  }
+  
+  .navigate-btn:hover {
+    background-color: #0056b3;
+  }
+  .room-image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .room-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+    
+  /* ปุ่ม "Edit Rooms" */
+.edit-room-btn {
+    background-color: #ffc107; /* สีเหลือง */
+    color: black;
+    padding: 12px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .edit-room-btn:hover {
+    background-color: #e0a800; /* สีเหลืองเข้มเมื่อ hover */
+    transform: scale(1.05);
+  }
+  

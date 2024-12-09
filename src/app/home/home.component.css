@@ -1,0 +1,261 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .home-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    padding: 60px 60px;
+    background: url('https://cdn.pixabay.com/photo/2021/12/11/07/59/hotel-6862159_960_720.jpg') center center / cover no-repeat;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    min-height: 400px; /* เพิ่มความสูงขั้นต่ำ */
+}
+
+
+  .hero-section h1 {
+    font-size: 48px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .hero-section p {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 20px;
+  }
+  
+  .hero-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hero-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+  }
+  
+  /* Features Section */
+  .features-section {
+    margin-top: 50px;
+  }
+  
+  .features-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .feature-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Contact Section */
+  /* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, #f5c236, #bb8129);
+    padding: 50px 30px;
+    text-align: center;
+    border: 2px solid #e0e0e0; /* เพิ่มกรอบ */
+    border-radius: 10px; /* มุมโค้ง */
+    margin: 50px auto;
+    max-width: 1000px; /* จำกัดความกว้าง */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.contact-details {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.8; /* เพิ่มความห่างระหว่างบรรทัด */
+}
+
+.contact-details p {
+    margin: 12px 0;
+}
+
+.contact-details a {
+    color: #cf1717; /* ใช้สีเขียวสำหรับลิงก์ */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent; /* กรอบโปร่งใส */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* เพิ่มเอฟเฟกต์ */
+}
+
+.contact-details a:hover {
+    text-decoration: none;
+    color: #000000; /* เปลี่ยนเป็นสีขาว */
+    background-color: #28a745; /* เพิ่มพื้นหลังสีเขียว */
+    border-color: #28a745;
+}
+
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .social-icon {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  /* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #f5c236, #bb8129);
+  padding: 15px 30px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo h1 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline-block;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #ffdd57;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d11a2a;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,47 @@
+<div class="room-container">
+  <h2>Rooms List</h2>
+  <ul class="room-list">
+    <li *ngFor="let room of rooms" class="room-item">
+      <div class="room-info">
+        <p><strong>Room Number:</strong> {{ room.room_number }}</p>
+        <p><strong>Type:</strong> {{ room.type }}</p>
+        <p><strong>People:</strong> {{ room.people }}</p>
+        <p><strong>Day:</strong> {{ room.day | date: 'longDate' }}</p>
+      </div>
+      <div class="room-actions">
+        <button class="btn edit-btn" (click)="editRoom(room)">Edit</button>
+        <button class="btn delete-btn" (click)="deleteRoom(room.id)">Delete</button>
+      </div>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedRoom" class="edit-room-form">
+    <h3>Edit Room</h3>
+    <form (ngSubmit)="updateRoom()">
+      <div class="form-group">
+        <label>Room Number:</label>
+        <input [(ngModel)]="selectedRoom.room_number" name="room_number" required>
+      </div>
+      <div class="form-group">
+        <label>Type:</label>
+        <select [(ngModel)]="selectedRoom.type" name="type" required>
+          <option value="Single">Single</option>
+          <option value="Honeymoon">Honeymoon</option>
+          <option value="Luxury">Luxury</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>People:</label>
+        <input [(ngModel)]="selectedRoom.people" name="people" type="number" required>
+      </div>
+      <div class="form-group">
+        <label>Day:</label>
+        <input [(ngModel)]="selectedRoom.day" name="day" type="date" required>
+      </div>
+      <button type="submit" class="btn update-btn">Update</button>
+    </form>
+  </div>
+
+  <!-- ปุ่ม Go to Home -->
+  <button (click)="navigateToRooms()" class="btn go-home-btn">Go to Home</button>
+</div>

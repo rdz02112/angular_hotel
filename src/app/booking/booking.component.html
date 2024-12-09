@@ -1,0 +1,41 @@
+<div class="book-room-container">
+  <h2>Book a Room</h2>
+  <form (ngSubmit)="addRoom()">
+    <div class="form-group">
+      <label for="room_number">Room Number:</label>
+      <input id="room_number" type="number" [(ngModel)]="room_number" name="room_number" required>
+    </div>
+
+    <div class="form-group">
+      <label for="type">Type:</label>
+      <select id="type" [(ngModel)]="type" name="type" required>
+        <option value="Single">Single</option>
+        <option value="Honeymoon">Honeymoon</option>
+        <option value="Luxury">Luxury</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="people">People:</label>
+      <input id="people" type="number" [(ngModel)]="people" name="people" required>
+    </div>
+
+    <div class="form-group">
+      <label for="day">Day:</label>
+      <input id="day" type="date" [(ngModel)]="day" name="day" required>
+    </div>
+
+    <!-- แสดงรูปตาม Type -->
+    <div class="room-image-container">
+      <img *ngIf="type === 'Single'" src="https://images.pexels.com/photos/29252367/pexels-photo-29252367/free-photo-of-modern-cozy-bedroom-with-natural-light-and-green-decor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Single Room">
+      <img *ngIf="type === 'Honeymoon'" src="https://images.pexels.com/photos/13871316/pexels-photo-13871316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Honeymoon Room">
+      <img *ngIf="type === 'Luxury'" src="https://images.pexels.com/photos/6832199/pexels-photo-6832199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Luxury Room">
+    </div>
+
+    <button type="submit" class="btn add-btn">Book Now</button>
+  </form>
+  <div class="navigation-buttons">
+    <button (click)="navigateToroom()" class="btn edit-room-btn">Edit Rooms</button>
+    <button (click)="navigateToRooms()" class="btn navigate-btn">Go to Home</button>
+  </div>
+</div>
